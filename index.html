@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт максончика</title>
-		<meta property="og:title" content="Сайт Максончика">
-		<meta property="og:description" content="Это мой сайт и тут будут различные новости">
-		<meta property="og:image" content="images/logoN.jpg">
+	<meta property="og:title" content="Сайт Максончика">
+	<meta property="og:description" content="Это мой сайт и тут будут различные новости">
+	<meta property="og:image" content="images/logoN.jpg">
     <style>
         body {
             font-family: SuperCell Magic, sans-serif;
@@ -141,6 +141,21 @@
             padding: 10px 20px;
             font-weight: bold;
             margin-top: 20px;
+        }
+        /* Добавленные стили */
+			@media (max-width: 768px) and (orientation: portrait) {
+			.content {
+				flex-direction: column;
+			}
+
+			.text-block {
+				order: 1;
+			}
+
+			.image-block {
+				order: 2;
+			}
+		}
         }
     </style>
 </head>
